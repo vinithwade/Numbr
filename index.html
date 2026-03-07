@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Numbr — The AI CFO for Indian Businesses Using Tally</title>
+  <meta name="description" content="Numbr connects your Tally and instantly shows revenue, profit, inventory, and customer insights — all in one beautiful dashboard.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+</head>
+<body>
+  <!-- Top Banner -->
+  <div class="top-banner" id="topBanner">
+    <div class="container banner-inner">
+      <p><span class="banner-icon">⚡</span> <span class="banner-highlight">Early Access is Live</span> — Join 500+ Indian businesses transforming their financial intelligence</p>
+      <button class="banner-close" id="bannerClose" aria-label="Close banner">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M12 4L4 12M4 4l8 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-card">
+        <a href="#" class="logo">
+          <svg class="logo-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <rect x="2" y="14" width="4" height="8" rx="1" fill="currentColor" opacity="0.4"/>
+            <rect x="8" y="10" width="4" height="12" rx="1" fill="currentColor" opacity="0.6"/>
+            <rect x="14" y="6" width="4" height="16" rx="1" fill="currentColor" opacity="0.8"/>
+            <rect x="20" y="2" width="4" height="20" rx="1" fill="currentColor"/>
+          </svg>
+          <span class="logo-text">Numbr</span>
+        </a>
+        <div class="nav-links">
+          <a href="#features" class="nav-link">Features</a>
+          <a href="#how-it-works" class="nav-link">How It Works</a>
+          <a href="#results" class="nav-link">Results</a>
+          <a href="#testimonials" class="nav-link">Customers</a>
+        </div>
+        <a href="#waitlist" class="nav-cta">Get Early Access</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Section 1: Hero -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-badge">
+        <span class="badge-sparkle">✨</span>
+        Built for Indian businesses using Tally
+      </div>
+      <h1 class="hero-title">
+        The AI CFO for<br>
+        <span class="hero-gradient">Businesses Using Tally</span>
+      </h1>
+      <p class="hero-subtitle">
+        Numbr connects your Tally and instantly shows revenue, profit, inventory,
+        and customer insights — all in one beautiful dashboard.
+      </p>
+      <div class="hero-cta-group">
+        <a href="#waitlist" class="btn btn-primary btn-lg">
+          Join the Early Access
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4.167 10h11.666M10.833 5l5 5-5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+      <p class="hero-social-proof">500+ businesses already joined</p>
+    </div>
+    <div class="hero-glow"></div>
+  </section>
+
+  <!-- Section 2: Product Video -->
+  <section class="section video-section" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">See how your business becomes <span class="text-gradient">clear in seconds</span></h2>
+        <p class="section-subtitle">Connect Tally. Watch your business come alive.</p>
+      </div>
+      <div class="video-wrapper" data-animate>
+        <div class="video-card">
+          <div class="video-container" id="videoContainer">
+            <!-- Poster / thumbnail state -->
+            <div class="video-poster" id="videoPoster">
+              <div class="video-flow">
+                <div class="flow-step active" data-step="1">
+                  <div class="flow-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </div>
+                  <span>Connect Tally</span>
+                </div>
+                <div class="flow-line"></div>
+                <div class="flow-step" data-step="2">
+                  <div class="flow-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2v4m0 12v4M4.93 4.93l2.83 2.83m8.48 8.48l2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48l2.83-2.83" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                  </div>
+                  <span>Data Sync</span>
+                </div>
+                <div class="flow-line"></div>
+                <div class="flow-step" data-step="3">
+                  <div class="flow-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="7" height="7" rx="1" stroke="currentColor" stroke-width="2"/><rect x="14" y="3" width="7" height="7" rx="1" stroke="currentColor" stroke-width="2"/><rect x="3" y="14" width="7" height="7" rx="1" stroke="currentColor" stroke-width="2"/><rect x="14" y="14" width="7" height="7" rx="1" stroke="currentColor" stroke-width="2"/></svg>
+                  </div>
+                  <span>Dashboard</span>
+                </div>
+                <div class="flow-line"></div>
+                <div class="flow-step active" data-step="4">
+                  <div class="flow-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2a7 7 0 017 7c0 2.38-1.19 4.47-3 5.74V17a2 2 0 01-2 2h-4a2 2 0 01-2-2v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 017-7z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 21h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                  </div>
+                  <span>AI Insights</span>
+                </div>
+              </div>
+              <button class="play-button" id="playBtn" aria-label="Play demo video">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              </button>
+              <div class="video-poster-label">Watch the demo</div>
+            </div>
+            <!-- Actual video (hidden until play) -->
+            <video class="demo-video" id="demoVideo" preload="metadata" playsinline>
+              <source src="demo-video.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Problems -->
+  <section class="section problems-section">
+    <div class="container">
+      <div class="problems-layout">
+        <div class="problems-left" data-animate>
+          <div class="section-badge red-badge">The problem</div>
+          <h2 class="problems-title">Running a business<br>shouldn't feel like<br><span class="text-gradient-red">guessing</span></h2>
+          <p class="problems-desc">Most business owners using Tally still struggle to understand their finances. Sound familiar?</p>
+        </div>
+        <div class="problems-right">
+          <div class="problem-card" data-animate>
+            <div class="problem-number">01</div>
+            <div class="problem-content">
+              <h3>No real-time visibility</h3>
+              <p>You only understand your numbers after your accountant sends reports days later.</p>
+            </div>
+            <div class="problem-icon-end">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8S1 12 1 12z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><line x1="4" y1="4" x2="20" y2="20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+          </div>
+          <div class="problem-card" data-animate>
+            <div class="problem-number">02</div>
+            <div class="problem-content">
+              <h3>Hidden losses</h3>
+              <p>Dead inventory, delayed payments, and poor margins quietly drain your profits.</p>
+            </div>
+            <div class="problem-icon-end">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 9v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+          </div>
+          <div class="problem-card" data-animate>
+            <div class="problem-number">03</div>
+            <div class="problem-content">
+              <h3>Too much manual work</h3>
+              <p>Exporting Excel reports and analysing them takes hours every single week.</p>
+            </div>
+            <div class="problem-icon-end">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+          </div>
+          <div class="problem-card" data-animate>
+            <div class="problem-number">04</div>
+            <div class="problem-content">
+              <h3>No financial intelligence</h3>
+              <p>You see numbers, but you don't know what they actually mean for your business.</p>
+            </div>
+            <div class="problem-icon-end">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Solution -->
+  <section class="section solution-section" id="how-it-works">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">How it works</div>
+        <h2 class="section-title">Meet your <span class="text-gradient">AI CFO</span></h2>
+        <p class="section-subtitle">Numbr connects directly with Tally and transforms raw data into powerful financial intelligence.</p>
+      </div>
+
+      <!-- Horizontal Pipeline -->
+      <div class="pipeline" data-animate>
+        <div class="pipeline-step">
+          <div class="pipeline-number">1</div>
+          <div class="pipeline-content">
+            <h4>Connect Tally</h4>
+            <p>One-click secure connection to your Tally data</p>
+          </div>
+        </div>
+        <div class="pipeline-connector">
+          <svg width="40" height="2"><line x1="0" y1="1" x2="40" y2="1" stroke="currentColor" stroke-width="2" stroke-dasharray="4 4"/></svg>
+        </div>
+        <div class="pipeline-step">
+          <div class="pipeline-number">2</div>
+          <div class="pipeline-content">
+            <h4>Auto Sync</h4>
+            <p>Your data syncs securely in real time</p>
+          </div>
+        </div>
+        <div class="pipeline-connector">
+          <svg width="40" height="2"><line x1="0" y1="1" x2="40" y2="1" stroke="currentColor" stroke-width="2" stroke-dasharray="4 4"/></svg>
+        </div>
+        <div class="pipeline-step">
+          <div class="pipeline-number">3</div>
+          <div class="pipeline-content">
+            <h4>AI Analyses</h4>
+            <p>Our engine turns raw numbers into clarity</p>
+          </div>
+        </div>
+        <div class="pipeline-connector">
+          <svg width="40" height="2"><line x1="0" y1="1" x2="40" y2="1" stroke="currentColor" stroke-width="2" stroke-dasharray="4 4"/></svg>
+        </div>
+        <div class="pipeline-step">
+          <div class="pipeline-number">4</div>
+          <div class="pipeline-content">
+            <h4>You Decide</h4>
+            <p>See insights and take action instantly</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Features -->
+      <div class="features-clean">
+        <div class="feature-item" data-animate>
+          <div class="feature-item-icon green">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="feature-item-text">
+            <h3>Revenue Insights</h3>
+            <p>Track sales growth instantly across all your product lines and time periods.</p>
+          </div>
+        </div>
+        <div class="feature-item" data-animate>
+          <div class="feature-item-icon blue">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M9 11a4 4 0 100-8 4 4 0 000 8zm14 10v-2a4 4 0 00-3-3.87m-4-12a4 4 0 010 7.75" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="feature-item-text">
+            <h3>Customer Credit Intelligence</h3>
+            <p>Know exactly who owes you money, how much, and for how long.</p>
+          </div>
+        </div>
+        <div class="feature-item" data-animate>
+          <div class="feature-item-icon amber">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4M4 7l8 4M4 7v10l8 4m0-10v10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="feature-item-text">
+            <h3>Inventory Health</h3>
+            <p>Detect dead stock before it becomes a loss. Know what's moving and what's not.</p>
+          </div>
+        </div>
+        <div class="feature-item" data-animate>
+          <div class="feature-item-icon purple">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M23 6l-9.5 9.5-5-5L1 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M17 6h6v6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="feature-item-text">
+            <h3>Profit Analytics</h3>
+            <p>Understand where your real profit comes from — by product, customer, or period.</p>
+          </div>
+        </div>
+        <div class="feature-item" data-animate>
+          <div class="feature-item-icon green">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2a7 7 0 017 7c0 2.38-1.19 4.47-3 5.74V17a2 2 0 01-2 2h-4a2 2 0 01-2-2v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 017-7z" stroke="currentColor" stroke-width="2"/><path d="M10 21h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <div class="feature-item-text">
+            <h3>AI Insights</h3>
+            <p>Receive proactive alerts that help you take action before problems grow.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5: Money Impact -->
+  <section class="section impact-section" id="results">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge light">₹ The money you're losing</div>
+        <h2 class="section-title">Every day without clarity<br><span class="text-gradient">costs you money</span></h2>
+        <p class="section-subtitle">These are real numbers from businesses just like yours. How much are you leaving on the table?</p>
+      </div>
+
+      <!-- Hero stat -->
+      <div class="impact-hero" data-animate>
+        <div class="impact-hero-inner">
+          <div class="impact-hero-rupee">₹</div>
+          <div class="impact-hero-value" data-count="14.9" data-prefix="" data-suffix=" Lakhs" data-decimals="1">0 Lakhs</div>
+        </div>
+        <div class="impact-hero-label">Average money at risk found per business</div>
+      </div>
+
+      <div class="impact-grid">
+        <div class="impact-card" data-animate>
+          <div class="impact-card-header">
+            <div class="impact-icon-wrap red">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4M4 7l8 4M4 7v10l8 4m0-10v10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="impact-tag red">Bleeding cash</div>
+          </div>
+          <div class="impact-value" data-count="3.2" data-prefix="₹" data-suffix="L">₹0</div>
+          <div class="impact-label">Dead inventory sitting in your warehouse right now</div>
+        </div>
+        <div class="impact-card" data-animate>
+          <div class="impact-card-header">
+            <div class="impact-icon-wrap amber">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="impact-tag amber">Overdue</div>
+          </div>
+          <div class="impact-value" data-count="8.4" data-prefix="₹" data-suffix="L">₹0</div>
+          <div class="impact-label">Payments your customers haven't made yet</div>
+        </div>
+        <div class="impact-card" data-animate>
+          <div class="impact-card-header">
+            <div class="impact-icon-wrap green">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M23 6l-9.5 9.5-5-5L1 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M17 6h6v6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="impact-tag green">Opportunity</div>
+          </div>
+          <div class="impact-value" data-count="22" data-suffix="%" data-decimals="0">0%</div>
+          <div class="impact-label">Profit margin you could recover with better visibility</div>
+        </div>
+        <div class="impact-card" data-animate>
+          <div class="impact-card-header">
+            <div class="impact-icon-wrap blue">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M9 11a4 4 0 100-8 4 4 0 000 8zm14 10v-2a4 4 0 00-3-3.87" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="impact-tag blue">Time saved</div>
+          </div>
+          <div class="impact-value" data-count="7" data-suffix=" hrs" data-decimals="0">0 hrs</div>
+          <div class="impact-label">Given back to you every single week</div>
+        </div>
+      </div>
+
+      <p class="impact-cta-line">Stop guessing. <a href="#waitlist" class="impact-cta-link">Start knowing →</a></p>
+    </div>
+  </section>
+
+  <!-- Section 6: Testimonials -->
+  <section class="section testimonials-section" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">Loved by businesses</div>
+        <h2 class="section-title">What business owners <span class="text-gradient">say</span></h2>
+        <p class="section-subtitle">Don't just take our word for it — hear from business owners already using Numbr.</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card" data-animate>
+          <div class="testimonial-top">
+            <div class="testimonial-quote-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" opacity="0.15"><path d="M11 7.5V4H7.5C5.01 4 3 6.01 3 8.5V17h7V9.5H7c0-2.21 1.79-4 4-4zm11 0V4h-3.5C16.01 4 14 6.01 14 8.5V17h7V9.5h-3c0-2.21 1.79-4 4-4z"/></svg>
+            </div>
+            <div class="testimonial-stars">★★★★★</div>
+          </div>
+          <blockquote>"For the first time I actually understand my business numbers. It changed how I run my company."</blockquote>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">
+              <img src="https://randomuser.me/api/portraits/men/86.jpg" alt="Rajesh Kumar">
+            </div>
+            <div>
+              <div class="testimonial-name">Rajesh Kumar</div>
+              <div class="testimonial-role">Manufacturing Business Owner</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card featured" data-animate>
+          <div class="testimonial-top">
+            <div class="testimonial-quote-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" opacity="0.15"><path d="M11 7.5V4H7.5C5.01 4 3 6.01 3 8.5V17h7V9.5H7c0-2.21 1.79-4 4-4zm11 0V4h-3.5C16.01 4 14 6.01 14 8.5V17h7V9.5h-3c0-2.21 1.79-4 4-4z"/></svg>
+            </div>
+            <div class="testimonial-stars">★★★★★</div>
+          </div>
+          <blockquote>"It's like having a financial advisor sitting right inside my company. The AI insights are incredibly accurate."</blockquote>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">
+              <img src="https://randomuser.me/api/portraits/women/90.jpg" alt="Priya Sharma">
+            </div>
+            <div>
+              <div class="testimonial-name">Priya Sharma</div>
+              <div class="testimonial-role">Retail Business Owner</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card" data-animate>
+          <div class="testimonial-top">
+            <div class="testimonial-quote-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" opacity="0.15"><path d="M11 7.5V4H7.5C5.01 4 3 6.01 3 8.5V17h7V9.5H7c0-2.21 1.79-4 4-4zm11 0V4h-3.5C16.01 4 14 6.01 14 8.5V17h7V9.5h-3c0-2.21 1.79-4 4-4z"/></svg>
+            </div>
+            <div class="testimonial-stars">★★★★★</div>
+          </div>
+          <blockquote>"I used to wait days for reports. Now I see everything instantly. It saved us hours every week."</blockquote>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">
+              <img src="https://randomuser.me/api/portraits/men/44.jpg" alt="Amit Patel">
+            </div>
+            <div>
+              <div class="testimonial-name">Amit Patel</div>
+              <div class="testimonial-role">Distribution Company CEO</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 7: Waitlist CTA -->
+  <section class="section waitlist-section" id="waitlist">
+    <div class="container">
+      <div class="waitlist-card">
+        <div class="waitlist-left">
+          <div class="waitlist-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" fill="currentColor"/></svg>
+            Early Access
+          </div>
+          <h2 class="waitlist-title">Be among the first<br>to try <span class="text-gradient">Numbr</span></h2>
+          <p class="waitlist-desc">Join hundreds of Indian businesses already transforming their financial intelligence.</p>
+          <div class="waitlist-trust">
+            <div class="trust-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>Your data stays secure</span>
+            </div>
+            <div class="trust-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>Free during early access</span>
+            </div>
+            <div class="trust-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>Setup in under 2 minutes</span>
+            </div>
+          </div>
+        </div>
+        <div class="waitlist-right">
+          <form class="waitlist-form" id="waitlistForm">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your full name" required>
+            </div>
+            <div class="form-group">
+              <label for="business">Business Name</label>
+              <input type="text" id="business" name="business" placeholder="Your business name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@business.com" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg btn-full">
+              Join Early Access
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4.167 10h11.666M10.833 5l5 5-5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <p class="form-note">Limited early access for selected businesses</p>
+          </form>
+          <div class="waitlist-success" id="waitlistSuccess" hidden>
+            <div class="success-icon">✓</div>
+            <h3>You're on the list!</h3>
+            <p>We'll reach out to you soon with early access details.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <svg class="logo-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <rect x="2" y="14" width="4" height="8" rx="1" fill="currentColor" opacity="0.4"/>
+            <rect x="8" y="10" width="4" height="12" rx="1" fill="currentColor" opacity="0.6"/>
+            <rect x="14" y="6" width="4" height="16" rx="1" fill="currentColor" opacity="0.8"/>
+            <rect x="20" y="2" width="4" height="20" rx="1" fill="currentColor"/>
+          </svg>
+          <span class="logo-text">Numbr</span>
+        </div>
+        <p class="footer-text">The AI CFO for Indian Businesses Using Tally</p>
+        <p class="footer-copyright">© 2026 Numbr. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

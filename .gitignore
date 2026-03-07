@@ -1,0 +1,5 @@
+.DS_Store
+*.log
+.env
+.env.local
+Video_Generation_With_Use_Cases.mp4
