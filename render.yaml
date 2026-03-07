@@ -1,6 +1,6 @@
 services:
   - type: web
     name: numbr
-    env: static
+    runtime: static
     buildCommand: ""
     staticPublishPath: .
