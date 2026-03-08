@@ -466,8 +466,8 @@
             </button>
             <p class="form-note">Limited early access for selected businesses</p>
           </form>
-          <div class="waitlist-success" id="waitlistSuccess" hidden>
-            <div class="success-icon">✓</div>
+          <div class="waitlist-success waitlist-success-inline" id="waitlistSuccess" hidden>
+            <div class="success-icon success-icon-sm">✓</div>
             <h3>You're on the list!</h3>
             <p>We'll reach out to you soon with early access details.</p>
           </div>
@@ -495,6 +495,40 @@
     </div>
   </footer>
 
+  <!-- Success popup modal -->
+  <div class="success-modal" id="successModal" aria-hidden="true">
+    <div class="success-modal__backdrop" id="successModalBackdrop"></div>
+    <div class="success-modal__card">
+      <button type="button" class="success-modal__close" id="successModalClose" aria-label="Close">×</button>
+      <div class="success-icon">✓</div>
+      <h3>You're on the list!</h3>
+      <p class="success-message">We'll reach out to you soon with early access details.</p>
+      <div class="success-details">
+        <p class="success-details-title">Submitted details</p>
+        <dl class="success-details-list">
+          <div class="success-detail-row">
+            <dt>Name</dt>
+            <dd id="successName">—</dd>
+          </div>
+          <div class="success-detail-row">
+            <dt>Business</dt>
+            <dd id="successBusiness">—</dd>
+          </div>
+          <div class="success-detail-row">
+            <dt>Email</dt>
+            <dd id="successEmail">—</dd>
+          </div>
+          <div class="success-detail-row">
+            <dt>Phone</dt>
+            <dd id="successPhone">—</dd>
+          </div>
+        </dl>
+      </div>
+      <button type="button" class="btn btn-primary success-modal__btn" id="successModalBtn">Done</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

@@ -1,6 +1,19 @@
 (() => {
   'use strict';
 
+  // --- Party confetti when success popup opens ---
+  const triggerConfetti = () => {
+    if (typeof confetti !== 'function') return;
+    const count = 200;
+    const defaults = { origin: { y: 0.6 }, zIndex: 10000 };
+    confetti({ ...defaults, particleCount: count, spread: 100 });
+    confetti({ ...defaults, particleCount: count * 0.6, angle: 60, spread: 55 });
+    confetti({ ...defaults, particleCount: count * 0.6, angle: 120, spread: 55 });
+    setTimeout(() => {
+      confetti({ ...defaults, particleCount: count * 0.4, scalar: 1.2, spread: 80 });
+    }, 200);
+  };
+
   // --- Intersection Observer for scroll animations ---
   const animateOnScroll = () => {
     const elements = document.querySelectorAll('[data-animate], .problem-card, .feature-card, .feature-item, .impact-card, .impact-hero, .testimonial-card, .solution-flow, .pipeline');
@@ -138,9 +151,38 @@
       .catch(() => showSuccess());
 
       function showSuccess() {
+        document.getElementById('successName').textContent = data.name || '—';
+        document.getElementById('successBusiness').textContent = data.business || '—';
+        document.getElementById('successEmail').textContent = data.email || '—';
+        document.getElementById('successPhone').textContent = data.phone || '—';
         form.hidden = true;
-        success.hidden = false;
-        success.style.animation = 'fadeInUp 0.5s ease forwards';
+        const modal = document.getElementById('successModal');
+        if (modal) {
+          modal.classList.add('success-modal--open');
+          modal.setAttribute('aria-hidden', 'false');
+          document.body.style.overflow = 'hidden';
+          triggerConfetti();
+          const onEscape = (e) => {
+            if (e.key === 'Escape') closeModal();
+          };
+          const closeModal = () => {
+            modal.classList.remove('success-modal--open');
+            modal.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+            document.removeEventListener('keydown', onEscape);
+            form.hidden = false;
+            btn.textContent = '';
+            btn.innerHTML = originalText;
+            btn.disabled = false;
+          };
+          document.getElementById('successModalClose').onclick = closeModal;
+          document.getElementById('successModalBtn').onclick = closeModal;
+          document.getElementById('successModalBackdrop').onclick = closeModal;
+          document.addEventListener('keydown', onEscape);
+        } else {
+          success.hidden = false;
+          success.style.animation = 'fadeInUp 0.5s ease forwards';
+        }
       }
     });
   };

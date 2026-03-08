@@ -1307,18 +1307,96 @@ a { text-decoration: none; color: inherit; }
   margin-top: 4px;
 }
 
+/* Inline success (after closing popup) */
 .waitlist-success {
   text-align: center;
   padding: 60px 20px;
   width: 100%;
 }
+.waitlist-success-inline .success-icon-sm {
+  width: 48px;
+  height: 48px;
+  font-size: 1.25rem;
+  margin-bottom: 16px;
+}
+.waitlist-success h3 { font-size: 1.5rem; font-weight: 700; margin-bottom: 8px; }
+.waitlist-success p { color: var(--text-secondary); }
 
+/* Success popup modal */
+.success-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.success-modal.success-modal--open {
+  opacity: 1;
+  visibility: visible;
+}
+.success-modal__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.success-modal__card {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  max-height: 90vh;
+  overflow-y: auto;
+  text-align: center;
+  padding: 40px 28px 28px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  animation: successModalIn 0.35s ease forwards;
+}
+@keyframes successModalIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+.success-modal__close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  line-height: 1;
+  color: #4b5563;
+  background: transparent;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: color 0.2s, background 0.2s;
+}
+.success-modal__close:hover {
+  color: #111827;
+  background: #f3f4f6;
+}
 .success-icon {
   width: 64px;
   height: 64px;
   border-radius: 50%;
-  background: var(--green-100);
-  color: var(--green-700);
+  background: #dcfce7;
+  color: #15803d;
   font-size: 1.5rem;
   font-weight: 700;
   display: inline-flex;
@@ -1326,9 +1404,64 @@ a { text-decoration: none; color: inherit; }
   justify-content: center;
   margin-bottom: 20px;
 }
-
-.waitlist-success h3 { font-size: 1.5rem; font-weight: 700; margin-bottom: 8px; }
-.waitlist-success p { color: var(--text-secondary); }
+.success-modal__card h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #111827;
+}
+.success-modal__card .success-message {
+  color: #4b5563;
+  margin-bottom: 24px;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+}
+.success-details {
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 24px;
+  padding: 20px;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+}
+.success-details-title {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #6b7280;
+  margin-bottom: 12px !important;
+}
+.success-details-list { margin: 0; }
+.success-detail-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  padding: 10px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+.success-detail-row:last-child { border-bottom: none; }
+.success-detail-row dt {
+  margin: 0;
+  font-size: 0.875rem;
+  color: #6b7280;
+  font-weight: 500;
+  flex-shrink: 0;
+}
+.success-detail-row dd {
+  margin: 0;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #111827;
+  text-align: right;
+  word-break: break-all;
+}
+.success-modal__btn {
+  width: 100%;
+  margin-top: 0;
+}
 
 /* ============================================
    FOOTER
