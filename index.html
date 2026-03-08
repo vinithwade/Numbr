@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Numbr — The AI CFO for Indian Businesses Using Tally</title>
   <meta name="description" content="Numbr connects your Tally and instantly shows revenue, profit, inventory, and customer insights — all in one beautiful dashboard.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,7 +41,21 @@
           <a href="#results" class="nav-link">Results</a>
           <a href="#testimonials" class="nav-link">Customers</a>
         </div>
-        <a href="#waitlist" class="nav-cta">Get Early Access</a>
+        <a href="#waitlist" class="nav-cta nav-cta-desk">Get Early Access</a>
+        <button type="button" class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+      </div>
+    </div>
+    <div class="nav-overlay" id="navOverlay" aria-hidden="true">
+      <div class="nav-overlay-inner">
+        <a href="#features" class="nav-overlay-link">Features</a>
+        <a href="#how-it-works" class="nav-overlay-link">How It Works</a>
+        <a href="#results" class="nav-overlay-link">Results</a>
+        <a href="#testimonials" class="nav-overlay-link">Customers</a>
+        <a href="#waitlist" class="btn btn-primary btn-lg nav-overlay-cta">Get Early Access</a>
       </div>
     </div>
   </nav>

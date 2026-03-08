@@ -187,10 +187,40 @@
     });
   };
 
-  // --- Navbar scroll → compact pill ---
+  // --- Navbar scroll → compact pill + mobile menu ---
   const setupNavbar = () => {
     const nav = document.querySelector('.navbar');
-    if (!nav) return;
+    const toggle = document.getElementById('navToggle');
+    const overlay = document.getElementById('navOverlay');
+    if (!nav || !toggle || !overlay) return;
+
+    const openMenu = () => {
+      overlay.classList.add('nav-overlay--open');
+      overlay.setAttribute('aria-hidden', 'false');
+      toggle.setAttribute('aria-label', 'Close menu');
+      toggle.setAttribute('aria-expanded', 'true');
+      toggle.classList.add('nav-toggle--open');
+      document.body.style.overflow = 'hidden';
+    };
+    const closeMenu = () => {
+      overlay.classList.remove('nav-overlay--open');
+      overlay.setAttribute('aria-hidden', 'true');
+      toggle.setAttribute('aria-label', 'Open menu');
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.classList.remove('nav-toggle--open');
+      document.body.style.overflow = '';
+    };
+
+    toggle.addEventListener('click', () => {
+      if (overlay.classList.contains('nav-overlay--open')) closeMenu();
+      else openMenu();
+    });
+    overlay.querySelectorAll('.nav-overlay-link, .nav-overlay-cta').forEach((link) => {
+      link.addEventListener('click', closeMenu);
+    });
+    overlay.addEventListener('click', (e) => {
+      if (e.target === overlay) closeMenu();
+    });
 
     let ticking = false;
     window.addEventListener('scroll', () => {
